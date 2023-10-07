@@ -27,7 +27,7 @@ cargo install gifski
 ```
 
 ```bash
-deno install -f --allow-run --allow-write https://raw.githubusercontent.com/ansemb/tools/main/gifskeeno/gifskeeno.ts
+deno install -f --allow-run --allow-read --allow-write https://raw.githubusercontent.com/ansemb/tools/main/gifskeeno/gifskeeno.ts
 ```
 
 ### usage
