@@ -1,0 +1,21 @@
+[[language]]
+name = "typescript"
+file-types = ["ts"]
+scope = "source.ts"
+injection-regex = "^(ts|typescript)$"
+shebangs = ["deno", "node"]
+roots = ["deno.json", "package.json", "tsconfig.json"]
+language-servers = ["deno"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+indent = { tab-width = 2, unit = "  " }
+auto-format = true
+
+
+[language-server.deno]
+args = ["lsp"]
+command = "deno"
+
+[language-server.deno.config]
+enable = true
+lint = true
+unstable = true
